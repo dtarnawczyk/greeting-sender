@@ -1,22 +1,28 @@
 package org.greetings.sender.repository;
 
-import java.util.Date;
+import java.time.LocalDate;
 
-public class People {
+public class Person {
 
     private final String name;
-    private final Date birthday;
+    private final LocalDate birthday;
+    private final String email;
 
-    public People(String name, Date birthday) {
+    public Person(String name, LocalDate birthday, String email) {
         this.name = name;
         this.birthday = birthday;
+        this.email = email;
     }
 
     public String getName() {
         return name;
     }
 
-    public Date getBirthday() {
+    public LocalDate getBirthday() {
         return birthday;
+    }
+
+    public String getEmail() {
+        return email;
     }
 }

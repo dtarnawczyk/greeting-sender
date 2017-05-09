@@ -1,7 +1,8 @@
 package org.greetings.sender.repository;
 
-/**
- * Created by dominik on 2017-05-09.
- */
-public class PeopleRepository {
+import java.time.LocalDate;
+import java.util.List;
+
+public interface PeopleRepository {
+    List<Person> findPeoplesBornOn(LocalDate date);
 }

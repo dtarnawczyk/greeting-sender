@@ -1,7 +1,9 @@
 package org.greetings.sender.service;
 
-/**
- * Created by dominik on 2017-05-09.
- */
-public class BirthdayService {
+import org.greetings.sender.repository.Person;
+
+import java.util.List;
+
+public interface SendService {
+    void sendGreetings(List<Person> receivers);
 }
